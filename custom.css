@@ -1,0 +1,158 @@
+html,body { height:100%; overflow-x: hidden;}
+body {}
+
+/* centered container for all */
+.container {
+  padding: 0;
+}
+
+/* navigation */
+.my-navbar {
+  border: black solid 1px;
+  border-radius: 0;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.topbar {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+/* logo */
+.navbar-brand {
+  /* font-family: Zapfino;
+  margin-top: 10px;
+  margin-bottom: -10px; */
+  cursor: pointer;
+}
+
+#logo {
+  margin: -7px 0 0 2px;
+  width: 120px;
+  height: auto;
+}
+
+
+.myActive { font-weight: bold; }
+.center { text-align: center; }
+.navbar, .content, .panel { background-color: #f8f8f8; }
+
+/* content */
+.content {
+  padding: 2em;
+  text-align: justify;
+  margin-bottom: 30px;
+  border: black solid 1px;
+}
+
+/* ALL TABS */
+#check, #again, p, #spotify {
+  font-size: 16px;
+}
+@font-face {
+    font-family: 'CloudLight'; /*a name to be used later*/
+    src: "fonts/Cloud-Light.otf"; /*URL to font*/
+}
+p, h2, h3 { max-width: 570px; }
+
+/* ABOUT */
+#map {
+ /* height: 400px; */
+ padding-bottom: 50%;
+ max-width: 640px;
+}
+
+/* LISTEN */
+#spotify {
+  border: black solid 2px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #1DB954;
+  /* style="color:#1DB954" */
+}
+#spotify:hover {
+  text-decoration: none;
+  color: black;
+}
+
+/* READ */
+.post-header, .post-header:hover, .post-header:focus {
+  color: black;
+  cursor: pointer;
+}
+.post-header:focus {
+  text-decoration: none;
+}
+.panel {
+  border: #0099e6 solid 2px;
+  padding: 0px 10px;
+}
+
+/* PLAY */
+.row {
+  display: flex; /* equal height of the children */
+  margin: 0;
+}
+#inp {
+  width: 5em;
+  text-align: center;
+  font-size: 16px
+}
+#check {
+  margin-left: 0.5em;
+  width: 5em;
+}
+#answer {
+  margin-top: 10px;
+}
+#again {
+  width: 7em;
+}
+#inp, #check, #again {
+  border: #c6538c solid 2px;
+  border-radius: 4px;
+}
+
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* RESPONSIVE STUFF */
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 800px;
+  }
+}
+
+/* mobile */
+@media (max-width: 767px) {
+    #map {
+     height: 300px;
+    }
+    nav.navbar {
+      margin-top: 0;
+    }
+    /* .content {
+      border: none;
+      border-top: black solid 1px;
+      border-bottom: black solid 1px;
+    }
+    .navbar {
+      border: none;
+      border-top: black solid 1px;
+      border-bottom: black solid 1px;
+    } */
+}
+
+@media (max-width: 570px) {
+  .content {
+    text-align: left;
+    padding: 1em;
+  }
+}
